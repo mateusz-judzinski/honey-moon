@@ -53,7 +53,7 @@ export async function initGoldTier(container) {
 
         const clearPercentage = transparentPixels / (canvas.width * canvas.height);
 
-        if (clearPercentage > 0.6 && !isRevealed) {
+        if (clearPercentage > 0.9 && !isRevealed) {
             isRevealed = true;
             canvas.style.transition = "opacity 0.5s ease-out";
             canvas.style.opacity = "0";
