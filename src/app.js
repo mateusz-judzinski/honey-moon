@@ -7,8 +7,8 @@ import { initLock } from './prize/lock.js';
 document.addEventListener("DOMContentLoaded", async () => {
     const appContainer = document.getElementById("app");
 
-    // TODO: adjust target date when finished
-    const TARGET_DATE = new Date(2027, 2, 1);
+    // TODO: adjust target date once finished
+    const TARGET_DATE = new Date(2026, 2, 1);
     const CURRENT_DATE = new Date();
 
     if (CURRENT_DATE < TARGET_DATE) {
@@ -17,22 +17,31 @@ document.addEventListener("DOMContentLoaded", async () => {
         return;
     }
 
+    // TODO: uncomment this part once finished
+    // remove this statement at march next year
+//    if (true) {
+//        appContainer.innerHTML = await loadTemplate('./src/prize/error.html');
+//        return
+//    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const tier = urlParams.get("tier");
 
     appContainer.innerHTML = '';
 
-    switch (tier) {
-        case "gold":
+    const encodedTier = tier ? btoa(tier) : '';
+
+    switch (encodedTier) {
+        case "Z29sZC05NGMyNzQ4ZC1hMDJjLTQyM2YtOTAwMi00ZDNkNGZlMTAxNzI=":
             await initGoldTier(appContainer);
             break;
-        case "silver":
+        case "c2lsdmVyLTVhZWM4MmY0LWE5NGItNDllYy05MWViLWQyYTY5Y2FiMGY3ZQ==":
             await initSilverTier(appContainer);
             break;
-        case "bronze":
+        case "YnJvbnpl":
             await initBronzeTier(appContainer);
             break;
         default:
-            appContainer.innerHTML = await loadTemplate('./src/error.html');
+            appContainer.innerHTML = await loadTemplate('./src/prize/error.html');
     }
 });
