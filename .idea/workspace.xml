@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6b935a25-6211-408c-aa57-bab258986a68" name="Changes" comment="structure entire prize-project">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/prize/brozne/bronze.html" beforeDir="false" afterPath="$PROJECT_DIR$/game/prize/bronze/bronze.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/prize/brozne/bronze.js" beforeDir="false" afterPath="$PROJECT_DIR$/game/prize/bronze/bronze.js" afterDir="false" />
-    </list>
+    <list default="true" id="6b935a25-6211-408c-aa57-bab258986a68" name="Changes" comment="comment remove" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,13 +77,31 @@
       <option name="project" value="LOCAL" />
       <updated>1782039764942</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="import fix">
+      <option name="closed" value="true" />
+      <created>1782040139484</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1782040139484</updated>
+    </task>
+    <task id="LOCAL-00005" summary="comment remove">
+      <option name="closed" value="true" />
+      <created>1782040285357</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1782040285357</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit-push" />
     <MESSAGE value="initial game logic" />
     <MESSAGE value="structure entire prize-project" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure entire prize-project" />
+    <MESSAGE value="import fix" />
+    <MESSAGE value="comment remove" />
+    <option name="LAST_COMMIT_MESSAGE" value="comment remove" />
   </component>
 </project>
