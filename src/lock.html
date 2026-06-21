@@ -1,11 +1,34 @@
-<div class="p-8 text-center flex flex-col items-center justify-center h-full">
-    <div class="text-7xl mb-6">🛑</div>
-    <h1 class="text-3xl font-bold text-red-600 mb-4">Zakaz Wstępu!</h1>
-    <p class="text-slate-600 mb-6 text-lg">
-        Podróż poślubna jeszcze się nie zaczęła! <br>
-        Strefa nagród jest zablokowana.
-    </p>
-    <div class="bg-red-50 text-red-800 px-6 py-3 rounded-xl border border-red-200 font-semibold shadow-inner">
-        Proszę wrócić do nas w marcu 2027!
+<div id="lock-screen" class="fixed inset-0 w-full h-full overflow-y-auto p-8 text-center flex flex-col items-center justify-center bg-slate-950 text-slate-200 transition-colors duration-500">
+
+    <audio id="alarm-sound" src="https://assets.mixkit.co/active_storage/sfx/995/995-preview.mp3" preload="auto" loop></audio>
+    <audio id="explosion-sound" src="https://assets.mixkit.co/active_storage/sfx/217/217-preview.mp3" preload="auto"></audio>
+
+    <div id="lock-icon" class="text-8xl mb-6 animate-pulse">⏰</div>
+
+    <h1 id="lock-title" class="text-4xl font-extrabold text-amber-400 mb-4 tracking-tight">
+        PROTOKÓŁ F.R.A.J.E.R<br>URUCHOMIONY!
+    </h1>
+
+    <p class="text-xs text-slate-500 -mt-3 mb-6">(Falstart Rujnujący Atrakcje Jednocześnie Eliminujący Radość)</p>
+
+    <div id="lock-message" class="text-slate-300 mb-8 text-xl max-w-md space-y-4">
+        <p>
+            Wykryto przedwczesną próbę dostępu! <br>
+            System Travel-Safe™ aktywował procedurę
+            <span class="font-bold text-red-500 border-b border-red-500 border-dashed">Samozniszczenia Niespodzianek</span>
+        </p>
+        <p class="font-mono text-5xl text-red-600 bg-red-950/50 p-4 rounded-lg shadow-inner" id="countdown-timer">
+            00:30
+        </p>
+        <p class="text-sm text-slate-400 italic">
+            Zamknij tę stronę natychmiast, aby przerwać odliczanie! <br>
+            Nagrody stają się stabilne dopiero po dotarciu na miejsce podróży poślubnej (Marzec 2027).
+        </p>
+    </div>
+
+    <div class="border border-slate-700 bg-slate-900 px-6 py-3 rounded-full text-sm text-slate-500 shadow-xl">
+        Status systemu: <span class="text-amber-500 font-medium">Oczekiwanie na start podróży</span>
     </div>
 </div>
+
+<script src="lock.js"></script>

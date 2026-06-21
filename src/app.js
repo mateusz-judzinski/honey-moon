@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const appContainer = document.getElementById("app");
 
     // TODO: adjust target date when finished
-    const TARGET_DATE = new Date(2026, 2, 1);
+    const TARGET_DATE = new Date(2027, 2, 1);
     const CURRENT_DATE = new Date();
 
     if (CURRENT_DATE < TARGET_DATE) {
